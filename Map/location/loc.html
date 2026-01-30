@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map - CVRU HelpDesk Portal</title>
+    <link rel="stylesheet" href="/Styles/respnsive.css">
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <link rel="icon" href="/img/cvru.png" sizes="32x32" type="image/png">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Top Navigation Header -->
+        <nav class="top-nav">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="university-logo">
+                        <img src="/img/cvru.jpg" alt="CVRU Logo" class="logo-img">
+                        <div class="logo-text">
+                            <h1 class="university-name">CVRU</h1>
+                            <p class="university-subtitle">HelpDesk Portal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-center">
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9,22 9,12 15,12 15,22" />
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Map/map.html" class="nav-link active">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Map
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Gallery/gallery.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                    <circle cx="9" cy="9" r="2" />
+                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                </svg>
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Event/events.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                                    <line x1="16" x2="16" y1="2" y2="6" />
+                                    <line x1="8" x2="8" y1="2" y2="6" />
+                                    <line x1="3" x2="21" y1="10" y2="10" />
+                                </svg>
+                                Events
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Department/depart.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Departments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Contact/contact.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/feedback/feedback.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                                Feedback
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Admin/admin.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+                                    <path d="M21 12a9 9 0 1 1-18 0" />
+                                </svg>
+                                Admin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+
+    <!-- Home Page -->
+
+
+    <!-- Interactive Map Section -->
+            <section class="map-section">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <h3 class="map-title">Block A</h3>
+                            <p class="map-description">
+                                Explore our campus layout with detailed building locations,
+                                department directories, and navigation assistance.
+                            </p>
+                            <button class="map-btn" onclick="showPage('B-A')">Block A</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Interactive Map Section -->
+            <section class="map-section">
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <svg class="map-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <h3 class="map-title">Block B</h3>
+                            <p class="map-description">
+                                Explore our campus layout with detailed building locations,
+                                department directories, and navigation assistance.
+                            </p>
+                            <button class="map-btn" onclick="showPage('B-B')">Block B</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+    <main id="home" class="page">
+        <div class="container">
+            <div class="map-btn" onclick="showPage('B-A')">BLOCK - A</div>
+            <div class="map-btn" onclick="showPage('B-B')">BLOCK - B</div>
+            <a href="/CVRU_HELPDESK/index.html" class="back-button">Go Back</a>
+
+        </div>
+    </main>
+
+    <!-- Admissions Page -->
+    <div id="B-A" class="page">
+        <h1>MAP OF BLOCK - A</h1>
+        <section class="Profile">
+            <div class="container">
+
+                <!-- Profile 1 -->
+                <div class="profile-card" onclick="showPage('about-1')">
+                    <img src="/CVRU_HELPDESK/MAP/img/A 00.jpg" alt="Block_B_02">
+                    <h3>GROUND FLOAR</h3>
+                </div>
+
+                <!-- Profile 2 -->
+                <div class="profile-card" onclick="showPage('about-2')">
+                    <img src="/CVRU_HELPDESK/MAP/img/A 01.jpg" alt="Dr. Nitish Sinha">
+                    <h3>1<sup>st</sup> FLOAR</h3>
+                    
+                </div>
+
+                <!-- Profile 3 -->
+                <div class="profile-card" onclick="showPage('about-3')">
+                    <img src="/CVRU_HELPDESK/MAP/img/A 02.jpg" alt="Dr. Anu Nair">
+                    <h3>2<sup>nd</sup> FLOAR</h3>
+                </div>
+
+                <!-- Profile 4 -->
+                <div class="profile-card" onclick="showPage('about-4')">
+                    <img src="/CVRU_HELPDESK/MAP/img/A 03.jpg" alt="Pushpam Kumar Sinha">
+                    <h3>3<sup>rd</sup> FLOAR</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+    </div>
+
+    <!-- About Pages -->
+    <section id="about-1" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-A GROUND FLOAR</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/A 00.jpg" alt="Block_B_02">
+                    <h3>GROUND FLOAR OF BLOCK - A</h3>
+
+                </div>
+
+                <a href="#" class="back-button" onclick="showPage('B-A')">Go Back</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about-2" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-A 1<sup>st</sup> FLOAR</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/A 01.jpg"
+                        alt="Dr. Nitish Sinha">
+                    <h3>1<sup>st</sup> FLOAR OF BLOCK - A</h3>
+
+                    </div>
+                
+                    <a href="#" class="back-button" onclick="showPage('B-A')">Go Back</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about-3" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-A 2<sup>nd</sup> FLOAR</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/A 02.jpg" alt="Sanjeet Kumar">
+                    <h3>2<sup>nd</sup> FLOAR OF BLOCK - A</h3>
+                </div>
+               
+                    <a href="#" class="back-button" onclick="showPage('B-A')">Go Back</a>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-4" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-A 3<sup>rd</sup> FLOAR</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/A 03.jpg"
+                        alt="Pushpam Kumar Sinha">
+                        <h3>3<sup>rd</sup> FLOAR OF BLOCK - A</h3>
+
+                </div>
+               
+                    <a href="#" class="back-button" onclick="showPage('B-A')">Go Back</a>
+             
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="B-B" class="page">
+        <h1>MAP OF BLOCK - B</h1>
+        <section class="Profile">
+            <div class="container">
+
+                
+                <!-- Profile 1 -->
+                <div class="profile-card" onclick="showPage('about1')">
+                    <img src="/CVRU_HELPDESK/MAP/img/B 00.jpg" alt="Dr. Nitish Sinha">
+                    <h3>GROUND FLOAR OF BLOCK - B</h3>
+                    
+                </div>
+                
+                <!-- Profile 2 -->
+                <div class="profile-card" onclick="showPage('about2')">
+                    <img src="/CVRU_HELPDESK/MAP/img/B 01.jpg" alt="Dr. Anu Nair">
+                    <h3>1<sup>st</sup> FLOAR OF BLOCK - B</h3>
+                </div>
+                
+                <!-- Profile 3 -->
+                <div class="profile-card" onclick="showPage('about3')">
+                    <img src="/CVRU_HELPDESK/MAP/img/B 02.jpg" alt="Block_B_02">
+                    <h3>2<sup>nd</sup> FLOAR OF BLOCK - B</h3>
+                </div>
+
+                <!-- Profile 4 -->
+                <div class="profile-card" onclick="showPage('about4')">
+                    <img src="/CVRU_HELPDESK/MAP/img/B 03.jpg" alt="Pushpam Kumar Sinha">
+                    <h3>3<sup>rd</sup> FLOAR OF BLOCK - B</h3>
+                </div>
+
+
+            </div>
+        </section>
+
+        <a href="#" class="back-button" onclick="showPage('home')">Go Back</a>
+    </div>
+
+    <!-- About Pages -->
+    <section id="about1" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-B GROUND FLOAR
+            </div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/B 00.jpg" alt="Block_B_02">
+                    <h3>GROUND FLOAR OF BLOCK - B</h3>
+                </div>
+
+                <a href="#" class="back-button" onclick="showPage('B-B')">Go Back</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about2" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-B 1<sup>st</sup> FLOAR</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/B 01.jpg"
+                        alt="Dr. Nitish Sinha">
+                    <h3>1<sup>st</sup> FLOAR OF BLOCK - B</h3>
+
+                    </div>
+                
+                    <a href="#" class="back-button" onclick="showPage('B-B')">Go Back</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about3" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-B 2<sup>nd</sup> FLOAR</div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/B 02.jpg" alt="Sanjeet Kumar">
+                    <h3>2<sup>nd</sup> FLOAR OF BLOCK - B</h3>
+
+                </div>
+               
+                    <a href="#" class="back-button" onclick="showPage('B-B')">Go Back</a>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about4" class="about-page page" style="display: none;">
+        <div class="about-main">
+            <div class="about-logo">MAP BLOCK-B 3<sup>rd</sup> FLOAR </div>
+            <div class="about-container">
+                <div class="image-about"><img src="/CVRU_HELPDESK/MAP/img/B 03.jpg"
+                        alt="Pushpam Kumar Sinha">
+                    <h3>3<sup>rd</sup> FLOAR OF BLOCK - B</h3>
+
+                </div>
+               
+                    <a href="#" class="back-button" onclick="showPage('B-B')">Go Back</a>
+             
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 CVRU Bihar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none'; // Hide all pages
+            });
+            document.getElementById(pageId).style.display = 'block'; // Show selected page
+        }
+
+        // Show home page on load
+        document.addEventListener("DOMContentLoaded", function () {
+            showPage('home');
+
+        });
+
+        /* JavaScript for Menu Toggle */
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.querySelector(".menu-btn");
+            const navbar = document.querySelector("#navbar");
+
+            menuBtn.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
